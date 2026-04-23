@@ -24,7 +24,7 @@ olufunmi-hospital/
 │   ├── css/styles.css  Complete stylesheet (~3280 lines)
 │   ├── js/main.js      Complete JavaScript (~580 lines, 20 features)
 │   └── images/
-│       └── logo.jpeg   Hospital logo
+│       └── logo.jpg   Hospital logo
 ├── CLAUDE.md           Project specification
 ├── TODO.md             Build progress tracker
 └── README.md           This file
@@ -32,29 +32,33 @@ olufunmi-hospital/
 
 ## Contact Details
 
-| Channel | Details |
-|---|---|
-| Phone / WhatsApp | +234 903 751 9585 |
-| General Email | olufunmihospital@gmail.com |
-| Procurement Email | procurement@olufunmihospital.com.ng |
-| Instagram | @olufunmihospital |
-| Facebook | olufunmi hospital |
-| Twitter/X | @olufunmihospitl |
-| Address | Asero Estate, Abeokuta, Ogun State, Nigeria |
-| Canton Fair | Phase 3 — May 1–5, 2026 |
+| Channel           | Details                                     |
+| ----------------- | ------------------------------------------- |
+| Phone / WhatsApp  | +234 903 751 9585                           |
+| General Email     | olufunmihospital@gmail.com                  |
+| Procurement Email | procurement@olufunmihospital.com.ng         |
+| Instagram         | @olufunmihospital                           |
+| Facebook          | olufunmi hospital                           |
+| Twitter/X         | @olufunmihospitl                            |
+| Address           | Asero Estate, Abeokuta, Ogun State, Nigeria |
+| Canton Fair       | Phase 3 — May 1–5, 2026                     |
 
 ## Customisation
 
 ### Replace Placeholder Images
+
 All images use `https://picsum.photos/seed/{keyword}/{width}/{height}`. Replace with real photography:
+
 - Hospital exterior and interiors
 - Staff professional headshots
 - Facilities and equipment photos
 
 ### Update Google Map
+
 In `contact.html`, replace the `.map-placeholder` div with an actual Google Maps embed when the hospital's Google Maps pin is confirmed.
 
 ### Staff Photos
+
 On `team.html`, staff cards use CSS initials fallbacks. When professional photos are available, add `<img>` tags inside `.leadership-img-wrap` and `.team-card-front` elements.
 
 ## JavaScript Features

@@ -56,7 +56,7 @@ olufunmi-hospital/
 │   ├── js/
 │   │   └── main.js        ← All JavaScript (single IIFE file)
 │   └── images/
-│       └── logo.jpeg      ← Copy from project root
+│       └── logo.jpg      ← Copy from project root
 ├── CLAUDE.md              ← This file
 ├── TODO.md                ← Build progress tracker
 └── README.md              ← Setup instructions (created last)
@@ -400,7 +400,7 @@ Sections:
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
         <img
-          src="assets/images/logo.jpeg"
+          src="assets/images/logo.jpg"
           alt="Olufunmi Specialist Hospital Logo"
           width="52"
           height="52"
@@ -535,7 +535,7 @@ Follow this exact order. Do not skip steps or reorder:
 
 ```
 Step 1:  Create directory structure (mkdir -p all folders)
-Step 2:  Copy/verify logo.jpeg → assets/images/logo.jpeg
+Step 2:  Copy/verify logo.jpg → assets/images/logo.jpg
 Step 3:  Create TODO.md (track progress)
 Step 4:  Write assets/css/styles.css (COMPLETE — never truncate)
 Step 5:  Write assets/js/main.js (COMPLETE — never truncate)
@@ -562,7 +562,7 @@ After each file output: `✅ [filename] complete — [line count] lines`
 grep -roh 'href="[^#h][^"]*\.html"' olufunmi-hospital/ | sort | uniq
 
 # Confirm logo is referenced correctly in all HTML
-grep -r 'logo.jpeg' olufunmi-hospital/*.html
+grep -r 'logo.jpg' olufunmi-hospital/*.html
 
 # Confirm viewport meta in all pages
 grep -rL 'viewport' olufunmi-hospital/*.html
@@ -599,7 +599,7 @@ Files created:
   ├── assets/
   │   ├── css/styles.css  (Complete styles — ~1800+ lines)
   │   ├── js/main.js      (Complete JavaScript — ~600+ lines)
-  │   └── images/logo.jpeg
+  │   └── images/logo.jpg
   ├── CLAUDE.md
   ├── TODO.md
   └── README.md
