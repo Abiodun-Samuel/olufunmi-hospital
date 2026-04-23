@@ -18,6 +18,7 @@
   var navbar = document.getElementById('navbar');
   var hamburger = document.getElementById('hamburger');
   var mobileMenu = document.getElementById('mobileMenu');
+  var mobileMenuClose = document.getElementById('mobileMenuClose');
   var mobileLinks = document.querySelectorAll('.mobile-menu .nav-link');
 
   if (navbar) {
@@ -33,10 +34,19 @@
   }
 
   if (hamburger && mobileMenu) {
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      hamburger.setAttribute('aria-label', 'Open main menu');
+      document.body.style.overflow = '';
+    }
+
     hamburger.addEventListener('click', function () {
       var isOpen = mobileMenu.classList.toggle('open');
       hamburger.classList.toggle('open');
       hamburger.setAttribute('aria-expanded', isOpen);
+      hamburger.setAttribute('aria-label', isOpen ? 'Close main menu' : 'Open main menu');
       document.body.style.overflow = isOpen ? 'hidden' : '';
 
       if (isOpen) {
@@ -54,19 +64,24 @@
 
     mobileLinks.forEach(function (link) {
       link.addEventListener('click', function () {
-        mobileMenu.classList.remove('open');
-        hamburger.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
+        closeMobileMenu();
       });
     });
 
+    if (mobileMenuClose) {
+      mobileMenuClose.addEventListener('click', closeMobileMenu);
+    }
+
     document.addEventListener('click', function (e) {
       if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target) && mobileMenu.classList.contains('open')) {
-        mobileMenu.classList.remove('open');
-        hamburger.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', 'false');
-        document.body.style.overflow = '';
+        closeMobileMenu();
+      }
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+        closeMobileMenu();
+        hamburger.focus();
       }
     });
   }

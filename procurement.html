@@ -21,6 +21,16 @@
     />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#003087" />
+    <link rel="icon" href="assets/images/logo.jpg" type="image/jpeg" />
+    <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="assets/images/logo.jpg" />
+    <link rel="canonical" href="https://olufunmispecialisthospital.com/procurement.html" />
+    <meta property="og:url" content="https://olufunmispecialisthospital.com/procurement.html" />
+    <meta property="og:image" content="https://olufunmispecialisthospital.com/assets/images/logo-original.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Procurement &amp; Partnerships | Olufunmi Specialist Hospital Ltd." />
+    <meta name="twitter:description" content="Partner with Olufunmi Specialist Hospital, established Nigerian hospital expanding into nursing education. Submit your supplier proposal and schedule a Canton Fair 2026 meeting." />
+    <meta name="twitter:image" content="https://olufunmispecialisthospital.com/assets/images/logo-original.jpeg" />
     <title>
       Procurement &amp; Partnerships | Olufunmi Specialist Hospital Ltd.
     </title>
@@ -41,6 +51,26 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Hospital",
+        "name": "Olufunmi Specialist Hospital Ltd.",
+        "url": "https://olufunmispecialisthospital.com/",
+        "logo": "https://olufunmispecialisthospital.com/assets/images/logo.jpg",
+        "image": "https://olufunmispecialisthospital.com/assets/images/logo-original.jpeg",
+        "description": "Specialist hospital in Abeokuta, Ogun State, delivering accessible, affordable and patient-focused healthcare.",
+        "telephone": "+2349037519585",
+        "email": "olufunmihospital@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Plot XVI Adegboyega Street, Asero Estate",
+          "addressLocality": "Abeokuta",
+          "addressRegion": "Ogun State",
+          "addressCountry": "NG"
+        }
+      }
+    </script>
   </head>
   <body>
     <a href="#main-content" class="sr-only skip-link">Skip to main content</a>
@@ -82,8 +112,9 @@
             <button
               class="hamburger"
               id="hamburger"
-              aria-label="Toggle menu"
+              aria-label="Open main menu"
               aria-expanded="false"
+              aria-controls="mobileMenu"
             >
               <span></span><span></span><span></span>
             </button>
@@ -101,8 +132,9 @@
     >
       <button
         class="mobile-menu-close"
+        id="mobileMenuClose"
+        type="button"
         aria-label="Close menu"
-        onclick="document.getElementById('hamburger').click()"
       >
         <i class="fas fa-times"></i>
       </button>

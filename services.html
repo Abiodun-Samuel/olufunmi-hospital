@@ -21,6 +21,16 @@
     />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#003087" />
+    <link rel="icon" href="assets/images/logo.jpg" type="image/jpeg" />
+    <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="assets/images/logo.jpg" />
+    <link rel="canonical" href="https://olufunmispecialisthospital.com/services.html" />
+    <meta property="og:url" content="https://olufunmispecialisthospital.com/services.html" />
+    <meta property="og:image" content="https://olufunmispecialisthospital.com/assets/images/logo-original.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Our Services | Olufunmi Specialist Hospital Ltd." />
+    <meta name="twitter:description" content="Olufunmi Specialist Hospital services include general practice, obstetrics and gynaecology, paediatrics and neonatal care, internal medicine, surgery, pharmacy, laboratory, and radiology in Abeokuta." />
+    <meta name="twitter:image" content="https://olufunmispecialisthospital.com/assets/images/logo-original.jpeg" />
     <title>Our Services | Olufunmi Specialist Hospital Ltd.</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap"
@@ -39,6 +49,26 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Hospital",
+        "name": "Olufunmi Specialist Hospital Ltd.",
+        "url": "https://olufunmispecialisthospital.com/",
+        "logo": "https://olufunmispecialisthospital.com/assets/images/logo.jpg",
+        "image": "https://olufunmispecialisthospital.com/assets/images/logo-original.jpeg",
+        "description": "Specialist hospital in Abeokuta, Ogun State, delivering accessible, affordable and patient-focused healthcare.",
+        "telephone": "+2349037519585",
+        "email": "olufunmihospital@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Plot XVI Adegboyega Street, Asero Estate",
+          "addressLocality": "Abeokuta",
+          "addressRegion": "Ogun State",
+          "addressCountry": "NG"
+        }
+      }
+    </script>
   </head>
   <body>
     <a href="#main-content" class="sr-only skip-link">Skip to main content</a>
@@ -80,8 +110,9 @@
             <button
               class="hamburger"
               id="hamburger"
-              aria-label="Toggle menu"
+              aria-label="Open main menu"
               aria-expanded="false"
+              aria-controls="mobileMenu"
             >
               <span></span><span></span><span></span>
             </button>
@@ -99,8 +130,9 @@
     >
       <button
         class="mobile-menu-close"
+        id="mobileMenuClose"
+        type="button"
         aria-label="Close menu"
-        onclick="document.getElementById('hamburger').click()"
       >
         <i class="fas fa-times"></i>
       </button>
@@ -167,7 +199,7 @@
             <div class="service-detail-card">
               <img
                 class="service-detail-img"
-                src="https://picsum.photos/seed/doctor1/700/300"
+                src="assets/images/logo-original.jpeg"
                 alt="General medicine consultation"
                 loading="lazy"
               />
@@ -211,7 +243,7 @@
             <div class="service-detail-card">
               <img
                 class="service-detail-img"
-                src="https://picsum.photos/seed/ward/700/300"
+                src="assets/images/logo-original.jpeg"
                 alt="Maternity and obstetrics care"
                 loading="lazy"
               />
@@ -252,7 +284,7 @@
             <div class="service-detail-card">
               <img
                 class="service-detail-img"
-                src="https://picsum.photos/seed/doctor2/700/300"
+                src="assets/images/logo-original.jpeg"
                 alt="Paediatric care for children"
                 loading="lazy"
               />
@@ -298,7 +330,7 @@
             <div class="service-detail-card">
               <img
                 class="service-detail-img"
-                src="https://picsum.photos/seed/surgery/700/300"
+                src="assets/images/logo-original.jpeg"
                 alt="Surgical procedures at Olufunmi Hospital"
                 loading="lazy"
               />
@@ -341,7 +373,7 @@
             <div class="service-detail-card">
               <img
                 class="service-detail-img"
-                src="https://picsum.photos/seed/lab/700/300"
+                src="assets/images/logo-original.jpeg"
                 alt="Diagnostic laboratory and imaging"
                 loading="lazy"
               />
@@ -386,7 +418,7 @@
               <div style="position: relative">
                 <img
                   class="service-detail-img"
-                  src="https://picsum.photos/seed/training/700/300"
+                  src="assets/images/logo-original.jpeg"
                   alt="Radiology and diagnostic support services"
                   loading="lazy"
                 />
@@ -500,7 +532,7 @@
             </div>
             <div data-aos="fade-left" data-aos-delay="150">
               <img
-                src="https://picsum.photos/seed/nurse2/700/500"
+                src="assets/images/logo-original.jpeg"
                 alt="Specialist medical team coordination"
                 style="
                   border-radius: var(--radius-lg);

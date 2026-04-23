@@ -21,6 +21,16 @@
     />
     <meta property="og:type" content="website" />
     <meta name="theme-color" content="#003087" />
+    <link rel="icon" href="assets/images/logo.jpg" type="image/jpeg" />
+    <link rel="shortcut icon" href="assets/images/logo.jpg" type="image/jpeg" />
+    <link rel="apple-touch-icon" href="assets/images/logo.jpg" />
+    <link rel="canonical" href="https://olufunmispecialisthospital.com/facilities.html" />
+    <meta property="og:url" content="https://olufunmispecialisthospital.com/facilities.html" />
+    <meta property="og:image" content="https://olufunmispecialisthospital.com/assets/images/logo-original.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Our Facilities | Olufunmi Specialist Hospital Ltd." />
+    <meta name="twitter:description" content="Explore the facilities at Olufunmi Specialist Hospital: consultation rooms, operating theatre, maternity ward, laboratory, pharmacy, and our upcoming nursing simulation lab in Abeokuta, Nigeria." />
+    <meta name="twitter:image" content="https://olufunmispecialisthospital.com/assets/images/logo-original.jpeg" />
     <title>Our Facilities | Olufunmi Specialist Hospital Ltd.</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap"
@@ -39,6 +49,26 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="assets/css/styles.css" />
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Hospital",
+        "name": "Olufunmi Specialist Hospital Ltd.",
+        "url": "https://olufunmispecialisthospital.com/",
+        "logo": "https://olufunmispecialisthospital.com/assets/images/logo.jpg",
+        "image": "https://olufunmispecialisthospital.com/assets/images/logo-original.jpeg",
+        "description": "Specialist hospital in Abeokuta, Ogun State, delivering accessible, affordable and patient-focused healthcare.",
+        "telephone": "+2349037519585",
+        "email": "olufunmihospital@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Plot XVI Adegboyega Street, Asero Estate",
+          "addressLocality": "Abeokuta",
+          "addressRegion": "Ogun State",
+          "addressCountry": "NG"
+        }
+      }
+    </script>
   </head>
   <body>
     <a href="#main-content" class="sr-only skip-link">Skip to main content</a>
@@ -80,8 +110,9 @@
             <button
               class="hamburger"
               id="hamburger"
-              aria-label="Toggle menu"
+              aria-label="Open main menu"
               aria-expanded="false"
+              aria-controls="mobileMenu"
             >
               <span></span><span></span><span></span>
             </button>
@@ -99,8 +130,9 @@
     >
       <button
         class="mobile-menu-close"
+        id="mobileMenuClose"
+        type="button"
         aria-label="Close menu"
-        onclick="document.getElementById('hamburger').click()"
       >
         <i class="fas fa-times"></i>
       </button>
@@ -167,7 +199,7 @@
           <div class="grid-3" data-aos="fade-up" data-aos-delay="100">
             <div class="facility-card">
               <img
-                src="https://picsum.photos/seed/clinic/700/400"
+                src="assets/images/logo-original.jpeg"
                 alt="Consultation rooms at Olufunmi Specialist Hospital"
                 loading="lazy"
               />
@@ -186,7 +218,7 @@
 
             <div class="facility-card">
               <img
-                src="https://picsum.photos/seed/surgery/700/400"
+                src="assets/images/logo-original.jpeg"
                 alt="Operating theatre"
                 loading="lazy"
               />
@@ -205,7 +237,7 @@
 
             <div class="facility-card">
               <img
-                src="https://picsum.photos/seed/ward/700/400"
+                src="assets/images/logo-original.jpeg"
                 alt="Maternity ward"
                 loading="lazy"
               />
@@ -224,7 +256,7 @@
 
             <div class="facility-card">
               <img
-                src="https://picsum.photos/seed/lab/700/400"
+                src="assets/images/logo-original.jpeg"
                 alt="Diagnostic laboratory"
                 loading="lazy"
               />
@@ -243,7 +275,7 @@
 
             <div class="facility-card">
               <img
-                src="https://picsum.photos/seed/pharmacy/700/400"
+                src="assets/images/logo-original.jpeg"
                 alt="Hospital pharmacy"
                 loading="lazy"
               />
@@ -262,7 +294,7 @@
 
             <div class="facility-card">
               <img
-                src="https://picsum.photos/seed/training/700/400"
+                src="assets/images/logo-original.jpeg"
                 alt="Nursing simulation laboratory"
                 loading="lazy"
               />
@@ -289,7 +321,7 @@
       <!-- ===== SECTION 3: VIRTUAL TOUR TEASER ===== -->
       <section class="virtual-tour">
         <img
-          src="https://picsum.photos/seed/hospital2/1400/600"
+          src="assets/images/logo-original.jpeg"
           alt="Hospital corridor"
           class="virtual-tour-img"
           loading="lazy"
@@ -342,7 +374,7 @@
           <div class="grid-2" style="align-items: center; gap: 4rem">
             <div data-aos="fade-right">
               <img
-                src="https://picsum.photos/seed/classroom/700/500"
+                src="assets/images/logo-original.jpeg"
                 alt="Nursing education classroom and training space"
                 style="
                   border-radius: var(--radius-lg);
