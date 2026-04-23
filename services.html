@@ -1,378 +1,824 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Olufunmi Specialist Hospital services: general medicine, maternity, paediatrics, surgery, diagnostics, and our expanding nursing education programme in Abeokuta, Ogun State, Nigeria.">
-  <meta name="keywords" content="specialist hospital services Abeokuta, maternity hospital Ogun State, paediatrics Nigeria, surgery hospital Abeokuta, nursing education Nigeria">
-  <meta property="og:title" content="Our Services | Olufunmi Specialist Hospital Ltd.">
-  <meta property="og:description" content="Comprehensive specialist medical services at Olufunmi Hospital, Abeokuta. Book an appointment or learn about our nursing education expansion.">
-  <meta property="og:type" content="website">
-  <meta name="theme-color" content="#003087">
-  <title>Our Services | Olufunmi Specialist Hospital Ltd.</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.css">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-  <a href="#main-content" class="sr-only skip-link">Skip to main content</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Olufunmi Specialist Hospital services: general medicine, maternity, paediatrics, surgery, diagnostics, and our expanding nursing education programme in Abeokuta, Ogun State, Nigeria."
+    />
+    <meta
+      name="keywords"
+      content="specialist hospital services Abeokuta, maternity hospital Ogun State, paediatrics Nigeria, surgery hospital Abeokuta, nursing education Nigeria"
+    />
+    <meta
+      property="og:title"
+      content="Our Services | Olufunmi Specialist Hospital Ltd."
+    />
+    <meta
+      property="og:description"
+      content="Comprehensive specialist medical services at Olufunmi Hospital, Abeokuta. Book an appointment or learn about our nursing education expansion."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#003087" />
+    <title>Our Services | Olufunmi Specialist Hospital Ltd.</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a href="#main-content" class="sr-only skip-link">Skip to main content</a>
 
-  <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-  <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <div class="nav-inner">
-        <a href="index.html" class="nav-logo">
-          <img src="assets/images/logo.jpeg" alt="Olufunmi Specialist Hospital Logo" width="52" height="52">
-          <div class="nav-logo-text">
-            <span class="nav-logo-name">Olufunmi</span>
-            <span class="nav-logo-sub">Specialist Hospital Ltd.</span>
-          </div>
-        </a>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="facilities.html">Facilities</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li class="nav-highlight"><a href="procurement.html">Procurement &amp; Partnerships</a></li>
-          <li><a href="canton-fair.html">Canton Fair 2026</a></li>
-          <li><a href="team.html">Our Team</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="nav-actions">
-          <a href="#appointment" class="btn btn-primary btn-sm">
-            <i class="fas fa-calendar-check"></i> Book Appointment
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="nav-inner">
+          <a href="index.html" class="nav-logo">
+            <img
+              src="assets/images/logo.jpeg"
+              alt="Olufunmi Specialist Hospital Logo"
+              width="52"
+              height="52"
+            />
+            <div class="nav-logo-text">
+              <span class="nav-logo-name">Olufunmi</span>
+              <span class="nav-logo-sub">Specialist Hospital Ltd.</span>
+            </div>
           </a>
-          <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-            <span></span><span></span><span></span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Navigation menu">
-    <button class="mobile-menu-close" aria-label="Close menu" onclick="document.getElementById('hamburger').click()"><i class="fas fa-times"></i></button>
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="facilities.html" class="nav-link">Facilities</a>
-    <a href="services.html" class="nav-link">Services</a>
-    <a href="procurement.html" class="nav-link highlight">Procurement</a>
-    <a href="canton-fair.html" class="nav-link">Canton Fair 2026</a>
-    <a href="team.html" class="nav-link">Our Team</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-  </div>
-
-  <main id="main-content">
-
-    <!-- ===== SECTION 1: HERO BANNER ===== -->
-    <section class="page-hero">
-      <div class="container">
-        <div data-aos="fade-up">
-          <nav class="breadcrumb" aria-label="Breadcrumb">
-            <a href="index.html">Home</a>
-            <span aria-hidden="true">/</span>
-            <span>Services</span>
-          </nav>
-          <div class="page-hero-accent"><i class="fas fa-stethoscope"></i> Medical Services</div>
-          <h1>Our Medical Services</h1>
-          <div class="hero-divider"></div>
-          <p class="hero-desc" style="margin:0 auto; text-align:center; color:rgba(255,255,255,0.7);">Comprehensive specialist care across six departments, delivered by experienced professionals with world-class standards.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== SECTION 2: SERVICES FULL GRID ===== -->
-    <section class="section" style="background:var(--white);">
-      <div class="container">
-        <div class="text-center" style="margin-bottom:3rem;" data-aos="fade-up">
-          <span class="section-label"><i class="fas fa-stethoscope"></i> Clinical Services</span>
-          <h2 class="section-title centered">Specialist Medical Services</h2>
-        </div>
-        <div class="grid-3 services-grid" data-aos="fade-up" data-aos-delay="100">
-
-          <!-- General Medicine -->
-          <div class="service-detail-card">
-            <img class="service-detail-img" src="https://picsum.photos/seed/doctor1/700/300" alt="General medicine consultation" loading="lazy">
-            <div class="service-detail-content">
-              <h3><i class="fas fa-user-md" style="color:var(--teal); margin-right:0.5rem;"></i>General Medicine</h3>
-              <p>Comprehensive adult medicine covering the full spectrum of internal conditions. Our physicians provide expert diagnosis, ongoing management, and specialist referrals.</p>
-              <ul class="service-sub-list">
-                <li><i class="fas fa-circle"></i> Chronic disease management (diabetes, hypertension)</li>
-                <li><i class="fas fa-circle"></i> Infectious disease treatment</li>
-                <li><i class="fas fa-circle"></i> Preventive care and health screening</li>
-                <li><i class="fas fa-circle"></i> Specialist referral coordination</li>
-              </ul>
-              <a href="#appointment" class="btn btn-secondary btn-sm">Book Appointment <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Maternity -->
-          <div class="service-detail-card">
-            <img class="service-detail-img" src="https://picsum.photos/seed/ward/700/300" alt="Maternity and obstetrics care" loading="lazy">
-            <div class="service-detail-content">
-              <h3><i class="fas fa-baby" style="color:var(--teal); margin-right:0.5rem;"></i>Maternity &amp; Obstetrics</h3>
-              <p>Full antenatal, intrapartum, and postnatal care in a safe, supportive environment. Our maternity team is experienced, compassionate, and available 24/7.</p>
-              <ul class="service-sub-list">
-                <li><i class="fas fa-circle"></i> Antenatal booking and monitoring</li>
-                <li><i class="fas fa-circle"></i> Normal and high-risk deliveries</li>
-                <li><i class="fas fa-circle"></i> Postnatal ward care</li>
-                <li><i class="fas fa-circle"></i> Family planning services</li>
-              </ul>
-              <a href="#appointment" class="btn btn-secondary btn-sm">Book Appointment <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Paediatrics -->
-          <div class="service-detail-card">
-            <img class="service-detail-img" src="https://picsum.photos/seed/doctor2/700/300" alt="Paediatric care for children" loading="lazy">
-            <div class="service-detail-content">
-              <h3><i class="fas fa-child" style="color:var(--teal); margin-right:0.5rem;"></i>Paediatrics</h3>
-              <p>Dedicated paediatric services from newborns through adolescence. Our child health specialists provide expert diagnosis and treatment in a friendly, child-centred environment.</p>
-              <ul class="service-sub-list">
-                <li><i class="fas fa-circle"></i> Newborn and neonatal assessment</li>
-                <li><i class="fas fa-circle"></i> Childhood illness diagnosis and treatment</li>
-                <li><i class="fas fa-circle"></i> Growth and developmental monitoring</li>
-                <li><i class="fas fa-circle"></i> Immunisation and vaccination services</li>
-              </ul>
-              <a href="#appointment" class="btn btn-secondary btn-sm">Book Appointment <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Surgery -->
-          <div class="service-detail-card">
-            <img class="service-detail-img" src="https://picsum.photos/seed/surgery/700/300" alt="Surgical procedures at Olufunmi Hospital" loading="lazy">
-            <div class="service-detail-content">
-              <h3><i class="fas fa-procedures" style="color:var(--teal); margin-right:0.5rem;"></i>Surgery</h3>
-              <p>A range of general and specialist surgical procedures performed in our modern, fully equipped operating theatre. Our surgical team upholds the highest standards of patient safety.</p>
-              <ul class="service-sub-list">
-                <li><i class="fas fa-circle"></i> General surgical procedures</li>
-                <li><i class="fas fa-circle"></i> Hernia and abdominal surgery</li>
-                <li><i class="fas fa-circle"></i> Gynaecological surgical procedures</li>
-                <li><i class="fas fa-circle"></i> Emergency surgical intervention</li>
-              </ul>
-              <a href="#appointment" class="btn btn-secondary btn-sm">Book Appointment <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Diagnostics -->
-          <div class="service-detail-card">
-            <img class="service-detail-img" src="https://picsum.photos/seed/lab/700/300" alt="Diagnostic laboratory and imaging" loading="lazy">
-            <div class="service-detail-content">
-              <h3><i class="fas fa-flask" style="color:var(--teal); margin-right:0.5rem;"></i>Diagnostics &amp; Laboratory</h3>
-              <p>In-house laboratory and diagnostic services providing fast, accurate results. Our clinical team uses diagnostic findings to guide evidence-based treatment decisions.</p>
-              <ul class="service-sub-list">
-                <li><i class="fas fa-circle"></i> Full blood count and biochemistry panels</li>
-                <li><i class="fas fa-circle"></i> Microbiology and culture services</li>
-                <li><i class="fas fa-circle"></i> Urinalysis and hormonal testing</li>
-                <li><i class="fas fa-circle"></i> Ultrasound imaging services</li>
-              </ul>
-              <a href="#appointment" class="btn btn-secondary btn-sm">Book Appointment <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <!-- Nursing Education -->
-          <div class="service-detail-card nursing-detail">
-            <div style="position:relative;">
-              <img class="service-detail-img" src="https://picsum.photos/seed/training/700/300" alt="Nursing education and clinical training" loading="lazy">
-              <span class="nursing-badge" style="position:absolute; top:1rem; right:1rem;">Expanding</span>
-            </div>
-            <div class="service-detail-content">
-              <h3><i class="fas fa-graduation-cap" style="color:var(--accent); margin-right:0.5rem;"></i>Nursing Education</h3>
-              <p>Our established hospital is expanding training capacity with a Nursing College, providing academic nursing programmes with direct clinical placement in our operational hospital.</p>
-              <ul class="service-sub-list">
-                <li><i class="fas fa-circle" style="color:var(--accent);"></i> Structured nursing diploma and degree programmes</li>
-                <li><i class="fas fa-circle" style="color:var(--accent);"></i> Clinical skills simulation laboratory</li>
-                <li><i class="fas fa-circle" style="color:var(--accent);"></i> Live ward placement in our hospital</li>
-                <li><i class="fas fa-circle" style="color:var(--accent);"></i> Qualified, experienced clinical tutors</li>
-              </ul>
-              <a href="procurement.html" class="btn btn-accent btn-sm">Partner With Us <i class="fas fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== SECTION 3: NURSING EDUCATION HIGHLIGHT ===== -->
-    <section class="nursing-highlight-section">
-      <div class="container" style="position:relative; z-index:1;">
-        <div class="grid-2" style="align-items:center; gap:4rem;">
-          <div data-aos="fade-right">
-            <span class="section-label" style="color:var(--accent-light);"><i class="fas fa-graduation-cap"></i> Nursing Education</span>
-            <h2 style="color:white; margin-bottom:1.5rem;">Expanding Nigeria's<br><span style="color:var(--accent-light);">Nursing Workforce</span></h2>
-            <p style="color:rgba(255,255,255,0.82); margin-bottom:2rem;">Nigeria faces a critical shortage of qualified nurses. Olufunmi Specialist Hospital is addressing this challenge head-on, leveraging our 15+ years of clinical experience to build a Nursing College that trains nurses to world-class standards, with the advantage of direct hospital placement.</p>
-            <ul class="nursing-feature-list">
-              <li><i class="fas fa-check-circle"></i> Direct clinical placement in our operational hospital</li>
-              <li><i class="fas fa-check-circle"></i> State-of-the-art simulation laboratory (coming)</li>
-              <li><i class="fas fa-check-circle"></i> Internationally benchmarked curriculum</li>
-              <li><i class="fas fa-check-circle"></i> Mentorship by experienced specialist doctors</li>
-              <li><i class="fas fa-check-circle"></i> Nursing and Midwifery Council of Nigeria aligned</li>
-              <li><i class="fas fa-check-circle"></i> Pathway to nursing employment</li>
-            </ul>
-            <div style="margin-top:2rem; display:flex; gap:1rem; flex-wrap:wrap;">
-              <a href="procurement.html" class="btn btn-accent">
-                <i class="fas fa-handshake"></i> Equipment Partnerships
-              </a>
-              <a href="contact.html" class="btn btn-outline-white">
-                <i class="fas fa-envelope"></i> Enquire Now
-              </a>
-            </div>
-          </div>
-          <div data-aos="fade-left" data-aos-delay="150">
-            <img src="https://picsum.photos/seed/nurse2/700/500" alt="Nursing students in clinical training" style="border-radius:var(--radius-lg); box-shadow:var(--shadow-lg);" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== SECTION 4: APPOINTMENT BOOKING FORM ===== -->
-    <section class="section" id="appointment" style="background:var(--off-white);">
-      <div class="container">
-        <div class="text-center" style="margin-bottom:3rem;" data-aos="fade-up">
-          <span class="section-label"><i class="fas fa-calendar-check"></i> Appointments</span>
-          <h2 class="section-title centered">Book an Appointment</h2>
-          <p style="margin:1rem auto 0; color:var(--text-muted);">Schedule your specialist consultation today. We respond to all requests within 24 hours.</p>
-        </div>
-        <div style="max-width:720px; margin:0 auto;" data-aos="fade-up" data-aos-delay="100">
-          <div class="supplier-form">
-            <form class="validated-form" id="appointmentForm" action="https://formsubmit.co/ajax/olufunmihospital@gmail.com" method="POST" novalidate>
-              <input type="hidden" name="_subject" value="Appointment Request - Olufunmi Hospital">
-              <input type="hidden" name="_captcha" value="false">
-              <input type="hidden" name="_template" value="table">
-              <div class="form-grid">
-
-                <div class="form-group">
-                  <label class="form-label" for="apptName">Full Name <span class="required">*</span></label>
-                  <input type="text" id="apptName" name="name" class="form-input" placeholder="Your full name" required autocomplete="name">
-                  <span class="form-error-msg" role="alert"></span>
-                </div>
-
-                <div class="form-group">
-                  <label class="form-label" for="apptPhone">Phone Number <span class="required">*</span></label>
-                  <input type="tel" id="apptPhone" name="phone" class="form-input" placeholder="+234 903 751 9585" required autocomplete="tel">
-                  <span class="form-error-msg" role="alert"></span>
-                </div>
-
-                <div class="form-group full-width">
-                  <label class="form-label" for="apptService">Service Required <span class="required">*</span></label>
-                  <select id="apptService" name="service" class="form-select" required>
-                    <option value="" disabled selected>Select a service</option>
-                    <option value="general-medicine">General Medicine</option>
-                    <option value="maternity">Maternity &amp; Obstetrics</option>
-                    <option value="paediatrics">Paediatrics</option>
-                    <option value="surgery">Surgery</option>
-                    <option value="diagnostics">Diagnostics &amp; Laboratory</option>
-                    <option value="antenatal">Antenatal Booking</option>
-                    <option value="other">Other / Not Sure</option>
-                  </select>
-                  <span class="form-error-msg" role="alert"></span>
-                </div>
-
-                <div class="form-group">
-                  <label class="form-label" for="apptDate">Preferred Date</label>
-                  <input type="date" id="apptDate" name="date" class="form-input">
-                  <span class="form-error-msg" role="alert"></span>
-                </div>
-
-                <div class="form-group">
-                  <label class="form-label" for="apptEmail">Email Address</label>
-                  <input type="email" id="apptEmail" name="email" class="form-input" placeholder="your@email.com (optional)" autocomplete="email">
-                  <span class="form-error-msg" role="alert"></span>
-                </div>
-
-                <div class="form-group full-width">
-                  <label class="form-label" for="apptMessage">Brief Description</label>
-                  <textarea id="apptMessage" name="message" class="form-textarea" rows="4" placeholder="Briefly describe your symptoms or the reason for your appointment (optional)"></textarea>
-                  <span class="form-error-msg" role="alert"></span>
-                </div>
-
-                <div class="form-group full-width">
-                  <button type="submit" class="btn btn-primary btn-lg form-submit-btn" style="width:100%; justify-content:center;">
-                    <i class="fas fa-calendar-check"></i> Book My Appointment
-                  </button>
-                </div>
-
-              </div>
-              <div class="form-success" role="status">
-                <i class="fas fa-check-circle"></i>
-                <h3>Appointment Request Sent!</h3>
-                <p>Thank you for booking with Olufunmi Specialist Hospital. Our team will contact you within 24 hours to confirm your appointment. For urgent medical concerns, please call us on <strong>+234 903 751 9585</strong>.</p>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- WhatsApp FAB -->
-  <a href="https://wa.me/2349037519585" class="whatsapp-fab" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-    <span class="fab-tooltip">Chat with us</span>
-  </a>
-
-  <!-- Back to Top -->
-  <button class="back-to-top" id="backToTop" aria-label="Back to top">
-    <i class="fas fa-chevron-up"></i>
-  </button>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <img src="assets/images/logo.jpeg" alt="Olufunmi Specialist Hospital Logo" width="64" height="64">
-          <div class="footer-tagline">Olufunmi Specialist Hospital Ltd.</div>
-          <p>Established specialist hospital in Abeokuta, Ogun State, delivering world-class healthcare and expanding into nursing education &amp; clinical training.</p>
-          <div class="footer-social">
-            <a href="https://www.instagram.com/olufunmihospital" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/olufunmihospital" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com/olufunmihospitl" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://wa.me/2349037519585" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-          </div>
-        </div>
-        <div class="footer-links">
-          <h4>Quick Links</h4>
-          <ul>
+          <ul class="nav-links" id="navLinks">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="facilities.html">Our Facilities</a></li>
-            <li><a href="services.html">Our Services</a></li>
-            <li><a href="procurement.html">Procurement &amp; Partnerships</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li class="nav-highlight">
+              <a href="procurement.html">Procurement &amp; Partnerships</a>
+            </li>
             <li><a href="canton-fair.html">Canton Fair 2026</a></li>
             <li><a href="team.html">Our Team</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
-        </div>
-        <div class="footer-contact">
-          <h4>Contact Us</h4>
-          <address>
-            <p><i class="fas fa-map-marker-alt"></i> Asero Estate, Abeokuta, Ogun State, Nigeria</p>
-            <p><i class="fas fa-phone-alt"></i> <a href="tel:+2349037519585">+234 903 751 9585</a></p>
-            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2349037519585" target="_blank" rel="noopener noreferrer">WhatsApp Us</a></p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:olufunmihospital@gmail.com">olufunmihospital@gmail.com</a></p>
-            <p><i class="fas fa-envelope"></i> <a href="mailto:procurement@olufunmihospital.com.ng">procurement@olufunmihospital.com.ng</a></p>
-          </address>
+          <div class="nav-actions">
+            <a href="#appointment" class="btn btn-primary btn-sm">
+              <i class="fas fa-calendar-check"></i> Book Appointment
+            </a>
+            <button
+              class="hamburger"
+              id="hamburger"
+              aria-label="Toggle menu"
+              aria-expanded="false"
+            >
+              <span></span><span></span><span></span>
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <div class="container">
-        <p>&copy; 2026 Olufunmi Specialist Hospital Ltd. All rights reserved. | Asero Estate, Abeokuta, Ogun State, Nigeria</p>
-        <p>Procurement: <a href="mailto:procurement@olufunmihospital.com.ng">procurement@olufunmihospital.com.ng</a></p>
-      </div>
-    </div>
-  </footer>
+    </nav>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
-  <script src="assets/js/main.js" defer></script>
-</body>
+    <!-- Mobile Menu -->
+    <div
+      class="mobile-menu"
+      id="mobileMenu"
+      role="dialog"
+      aria-label="Navigation menu"
+    >
+      <button
+        class="mobile-menu-close"
+        aria-label="Close menu"
+        onclick="document.getElementById('hamburger').click()"
+      >
+        <i class="fas fa-times"></i>
+      </button>
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="facilities.html" class="nav-link">Facilities</a>
+      <a href="services.html" class="nav-link">Services</a>
+      <a href="procurement.html" class="nav-link highlight">Procurement</a>
+      <a href="canton-fair.html" class="nav-link">Canton Fair 2026</a>
+      <a href="team.html" class="nav-link">Our Team</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </div>
+
+    <main id="main-content">
+      <!-- ===== SECTION 1: HERO BANNER ===== -->
+      <section class="page-hero">
+        <div class="container">
+          <div data-aos="fade-up">
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+              <a href="index.html">Home</a>
+              <span aria-hidden="true">/</span>
+              <span>Services</span>
+            </nav>
+            <div class="page-hero-accent">
+              <i class="fas fa-stethoscope"></i> Medical Services
+            </div>
+            <h1>Our Medical Services</h1>
+            <div class="hero-divider"></div>
+            <p
+              class="hero-desc"
+              style="
+                margin: 0 auto;
+                text-align: center;
+                color: rgba(255, 255, 255, 0.7);
+              "
+            >
+              Comprehensive specialist care across six departments, delivered by
+              experienced professionals with world-class standards.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SECTION 2: SERVICES FULL GRID ===== -->
+      <section class="section" style="background: var(--white)">
+        <div class="container">
+          <div
+            class="text-center"
+            style="margin-bottom: 3rem"
+            data-aos="fade-up"
+          >
+            <span class="section-label"
+              ><i class="fas fa-stethoscope"></i> Clinical Services</span
+            >
+            <h2 class="section-title centered">Specialist Medical Services</h2>
+          </div>
+          <div
+            class="grid-3 services-grid"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <!-- General Medicine -->
+            <div class="service-detail-card">
+              <img
+                class="service-detail-img"
+                src="https://picsum.photos/seed/doctor1/700/300"
+                alt="General medicine consultation"
+                loading="lazy"
+              />
+              <div class="service-detail-content">
+                <h3>
+                  <i
+                    class="fas fa-user-md"
+                    style="color: var(--teal); margin-right: 0.5rem"
+                  ></i
+                  >General Medicine
+                </h3>
+                <p>
+                  Comprehensive adult medicine covering the full spectrum of
+                  internal conditions. Our physicians provide expert diagnosis,
+                  ongoing management, and specialist referrals.
+                </p>
+                <ul class="service-sub-list">
+                  <li>
+                    <i class="fas fa-circle"></i> Chronic disease management
+                    (diabetes, hypertension)
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i> Infectious disease treatment
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i> Preventive care and health
+                    screening
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i> Specialist referral
+                    coordination
+                  </li>
+                </ul>
+                <a href="#appointment" class="btn btn-secondary btn-sm"
+                  >Book Appointment <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Maternity -->
+            <div class="service-detail-card">
+              <img
+                class="service-detail-img"
+                src="https://picsum.photos/seed/ward/700/300"
+                alt="Maternity and obstetrics care"
+                loading="lazy"
+              />
+              <div class="service-detail-content">
+                <h3>
+                  <i
+                    class="fas fa-baby"
+                    style="color: var(--teal); margin-right: 0.5rem"
+                  ></i
+                  >Obstetrics &amp; Gynaecology
+                </h3>
+                <p>
+                  Full antenatal, intrapartum, and postnatal care in a safe,
+                  supportive environment. Our maternity team is experienced,
+                  compassionate, and available 24/7.
+                </p>
+                <ul class="service-sub-list">
+                  <li>
+                    <i class="fas fa-circle"></i> Antenatal booking and
+                    monitoring
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i> Normal and high-risk
+                    deliveries
+                  </li>
+                  <li><i class="fas fa-circle"></i> Postnatal ward care</li>
+                  <li>
+                    <i class="fas fa-circle"></i> Family planning services
+                  </li>
+                </ul>
+                <a href="#appointment" class="btn btn-secondary btn-sm"
+                  >Book Appointment <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Paediatrics -->
+            <div class="service-detail-card">
+              <img
+                class="service-detail-img"
+                src="https://picsum.photos/seed/doctor2/700/300"
+                alt="Paediatric care for children"
+                loading="lazy"
+              />
+              <div class="service-detail-content">
+                <h3>
+                  <i
+                    class="fas fa-child"
+                    style="color: var(--teal); margin-right: 0.5rem"
+                  ></i
+                  >Paediatrics
+                </h3>
+                <p>
+                  Dedicated paediatric services from newborns through
+                  adolescence. Our child health specialists provide expert
+                  diagnosis and treatment in a friendly, child-centred
+                  environment.
+                </p>
+                <ul class="service-sub-list">
+                  <li>
+                    <i class="fas fa-circle"></i> Newborn and neonatal
+                    assessment
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i> Childhood illness diagnosis
+                    and treatment
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i> Growth and developmental
+                    monitoring
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i> Immunisation and vaccination
+                    services
+                  </li>
+                </ul>
+                <a href="#appointment" class="btn btn-secondary btn-sm"
+                  >Book Appointment <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Surgery -->
+            <div class="service-detail-card">
+              <img
+                class="service-detail-img"
+                src="https://picsum.photos/seed/surgery/700/300"
+                alt="Surgical procedures at Olufunmi Hospital"
+                loading="lazy"
+              />
+              <div class="service-detail-content">
+                <h3>
+                  <i
+                    class="fas fa-procedures"
+                    style="color: var(--teal); margin-right: 0.5rem"
+                  ></i
+                  >Surgery
+                </h3>
+                <p>
+                  A range of general and specialist surgical procedures
+                  performed in our modern, fully equipped operating theatre. Our
+                  surgical team upholds the highest standards of patient safety.
+                </p>
+                <ul class="service-sub-list">
+                  <li>
+                    <i class="fas fa-circle"></i> General surgical procedures
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i> Hernia and abdominal surgery
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i> Gynaecological surgical
+                    procedures
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i> Emergency surgical
+                    intervention
+                  </li>
+                </ul>
+                <a href="#appointment" class="btn btn-secondary btn-sm"
+                  >Book Appointment <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Diagnostics -->
+            <div class="service-detail-card">
+              <img
+                class="service-detail-img"
+                src="https://picsum.photos/seed/lab/700/300"
+                alt="Diagnostic laboratory and imaging"
+                loading="lazy"
+              />
+              <div class="service-detail-content">
+                <h3>
+                  <i
+                    class="fas fa-flask"
+                    style="color: var(--teal); margin-right: 0.5rem"
+                  ></i
+                  >Diagnostics &amp; Laboratory
+                </h3>
+                <p>
+                  In-house laboratory and diagnostic services providing fast,
+                  accurate results. Our clinical team uses diagnostic findings
+                  to guide evidence-based treatment decisions.
+                </p>
+                <ul class="service-sub-list">
+                  <li>
+                    <i class="fas fa-circle"></i> Full blood count and
+                    biochemistry panels
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i> Microbiology and culture
+                    services
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i> Urinalysis and hormonal
+                    testing
+                  </li>
+                  <li>
+                    <i class="fas fa-circle"></i> Ultrasound imaging services
+                  </li>
+                </ul>
+                <a href="#appointment" class="btn btn-secondary btn-sm"
+                  >Book Appointment <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- Nursing Education -->
+            <div class="service-detail-card nursing-detail">
+              <div style="position: relative">
+                <img
+                  class="service-detail-img"
+                  src="https://picsum.photos/seed/training/700/300"
+                  alt="Nursing education and clinical training"
+                  loading="lazy"
+                />
+                <span
+                  class="nursing-badge"
+                  style="position: absolute; top: 1rem; right: 1rem"
+                  >Expanding</span
+                >
+              </div>
+              <div class="service-detail-content">
+                <h3>
+                  <i
+                    class="fas fa-graduation-cap"
+                    style="color: var(--accent); margin-right: 0.5rem"
+                  ></i
+                  >Nursing Education
+                </h3>
+                <p>
+                  Our established hospital is expanding training capacity with a
+                  Nursing College, providing academic nursing programmes with
+                  direct clinical placement in our operational hospital.
+                </p>
+                <ul class="service-sub-list">
+                  <li>
+                    <i class="fas fa-circle" style="color: var(--accent)"></i>
+                    Structured nursing diploma and degree programmes
+                  </li>
+                  <li>
+                    <i class="fas fa-circle" style="color: var(--accent)"></i>
+                    Clinical skills simulation laboratory
+                  </li>
+                  <li>
+                    <i class="fas fa-circle" style="color: var(--accent)"></i>
+                    Live ward placement in our hospital
+                  </li>
+                  <li>
+                    <i class="fas fa-circle" style="color: var(--accent)"></i>
+                    Qualified, experienced clinical tutors
+                  </li>
+                </ul>
+                <a href="procurement.html" class="btn btn-accent btn-sm"
+                  >Partner With Us <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SECTION 3: NURSING EDUCATION HIGHLIGHT ===== -->
+      <section class="nursing-highlight-section">
+        <div class="container" style="position: relative; z-index: 1">
+          <div class="grid-2" style="align-items: center; gap: 4rem">
+            <div data-aos="fade-right">
+              <span class="section-label" style="color: var(--accent-light)"
+                ><i class="fas fa-graduation-cap"></i> Nursing Education</span
+              >
+              <h2 style="color: white; margin-bottom: 1.5rem">
+                Expanding Nigeria's<br /><span
+                  style="color: var(--accent-light)"
+                  >Nursing Workforce</span
+                >
+              </h2>
+              <p style="color: rgba(255, 255, 255, 0.82); margin-bottom: 2rem">
+                Nigeria faces a critical shortage of qualified nurses. Olufunmi
+                Specialist Hospital is addressing this challenge head-on,
+                leveraging our 15+ years of clinical experience to build a
+                Nursing College that trains nurses to world-class standards,
+                with the advantage of direct hospital placement.
+              </p>
+              <ul class="nursing-feature-list">
+                <li>
+                  <i class="fas fa-check-circle"></i> Direct clinical placement
+                  in our operational hospital
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> State-of-the-art
+                  simulation laboratory (coming)
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Internationally
+                  benchmarked curriculum
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Mentorship by experienced
+                  specialist doctors
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Nursing and Midwifery
+                  Council of Nigeria aligned
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Pathway to nursing
+                  employment
+                </li>
+              </ul>
+              <div
+                style="
+                  margin-top: 2rem;
+                  display: flex;
+                  gap: 1rem;
+                  flex-wrap: wrap;
+                "
+              >
+                <a href="procurement.html" class="btn btn-accent">
+                  <i class="fas fa-handshake"></i> Equipment Partnerships
+                </a>
+                <a href="contact.html" class="btn btn-outline-white">
+                  <i class="fas fa-envelope"></i> Enquire Now
+                </a>
+              </div>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="150">
+              <img
+                src="https://picsum.photos/seed/nurse2/700/500"
+                alt="Nursing students in clinical training"
+                style="
+                  border-radius: var(--radius-lg);
+                  box-shadow: var(--shadow-lg);
+                "
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== SECTION 4: APPOINTMENT BOOKING FORM ===== -->
+      <section
+        class="section"
+        id="appointment"
+        style="background: var(--off-white)"
+      >
+        <div class="container">
+          <div
+            class="text-center"
+            style="margin-bottom: 3rem"
+            data-aos="fade-up"
+          >
+            <span class="section-label"
+              ><i class="fas fa-calendar-check"></i> Appointments</span
+            >
+            <h2 class="section-title centered">Book an Appointment</h2>
+            <p style="margin: 1rem auto 0; color: var(--text-muted)">
+              Schedule your specialist consultation today. We respond to all
+              requests within 24 hours.
+            </p>
+          </div>
+          <div
+            style="max-width: 720px; margin: 0 auto"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="supplier-form">
+              <form
+                class="validated-form"
+                id="appointmentForm"
+                action="https://formsubmit.co/ajax/olufunmihospital@gmail.com"
+                method="POST"
+                novalidate
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Appointment Request - Olufunmi Hospital"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label class="form-label" for="apptName"
+                      >Full Name <span class="required">*</span></label
+                    >
+                    <input
+                      type="text"
+                      id="apptName"
+                      name="name"
+                      class="form-input"
+                      placeholder="Your full name"
+                      required
+                      autocomplete="name"
+                    />
+                    <span class="form-error-msg" role="alert"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="apptPhone"
+                      >Phone Number <span class="required">*</span></label
+                    >
+                    <input
+                      type="tel"
+                      id="apptPhone"
+                      name="phone"
+                      class="form-input"
+                      placeholder="+234 903 751 9585"
+                      required
+                      autocomplete="tel"
+                    />
+                    <span class="form-error-msg" role="alert"></span>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label class="form-label" for="apptService"
+                      >Service Required <span class="required">*</span></label
+                    >
+                    <select
+                      id="apptService"
+                      name="service"
+                      class="form-select"
+                      required
+                    >
+                      <option value="" disabled selected>
+                        Select a service
+                      </option>
+                      <option value="general-medicine">General Medicine</option>
+                      <option value="maternity">
+                        Maternity &amp; Obstetrics
+                      </option>
+                      <option value="paediatrics">Paediatrics</option>
+                      <option value="surgery">Surgery</option>
+                      <option value="diagnostics">
+                        Diagnostics &amp; Laboratory
+                      </option>
+                      <option value="antenatal">Antenatal Booking</option>
+                      <option value="other">Other / Not Sure</option>
+                    </select>
+                    <span class="form-error-msg" role="alert"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="apptDate"
+                      >Preferred Date</label
+                    >
+                    <input
+                      type="date"
+                      id="apptDate"
+                      name="date"
+                      class="form-input"
+                    />
+                    <span class="form-error-msg" role="alert"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="form-label" for="apptEmail"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      id="apptEmail"
+                      name="email"
+                      class="form-input"
+                      placeholder="your@email.com (optional)"
+                      autocomplete="email"
+                    />
+                    <span class="form-error-msg" role="alert"></span>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <label class="form-label" for="apptMessage"
+                      >Brief Description</label
+                    >
+                    <textarea
+                      id="apptMessage"
+                      name="message"
+                      class="form-textarea"
+                      rows="4"
+                      placeholder="Briefly describe your symptoms or the reason for your appointment (optional)"
+                    ></textarea>
+                    <span class="form-error-msg" role="alert"></span>
+                  </div>
+
+                  <div class="form-group full-width">
+                    <button
+                      type="submit"
+                      class="btn btn-primary btn-lg form-submit-btn"
+                      style="width: 100%; justify-content: center"
+                    >
+                      <i class="fas fa-calendar-check"></i> Book My Appointment
+                    </button>
+                  </div>
+                </div>
+                <div class="form-success" role="status">
+                  <i class="fas fa-check-circle"></i>
+                  <h3>Appointment Request Sent!</h3>
+                  <p>
+                    Thank you for booking with Olufunmi Specialist Hospital. Our
+                    team will contact you within 24 hours to confirm your
+                    appointment. For urgent medical concerns, please call us on
+                    <strong>+234 903 751 9585</strong>.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- WhatsApp FAB -->
+    <a
+      href="https://wa.me/2349037519585"
+      class="whatsapp-fab"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat on WhatsApp"
+    >
+      <i class="fab fa-whatsapp"></i>
+      <span class="fab-tooltip">Chat with us</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img
+              src="assets/images/logo.jpeg"
+              alt="Olufunmi Specialist Hospital Logo"
+              width="64"
+              height="64"
+            />
+            <div class="footer-tagline">Olufunmi Specialist Hospital Ltd.</div>
+            <p>
+              Established specialist hospital in Abeokuta, Ogun State,
+              delivering world-class healthcare and expanding into nursing
+              education &amp; clinical training.
+            </p>
+            <div class="footer-social">
+              <a
+                href="https://www.instagram.com/olufunmihospital"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.facebook.com/olufunmihospital"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://twitter.com/olufunmihospitl"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter / X"
+                ><i class="fab fa-x-twitter"></i
+              ></a>
+              <a
+                href="https://wa.me/2349037519585"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="facilities.html">Our Facilities</a></li>
+              <li><a href="services.html">Our Services</a></li>
+              <li>
+                <a href="procurement.html">Procurement &amp; Partnerships</a>
+              </li>
+              <li><a href="canton-fair.html">Canton Fair 2026</a></li>
+              <li><a href="team.html">Our Team</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <address>
+              <p>
+                <i class="fas fa-map-marker-alt"></i> Asero Estate, Abeokuta,
+                Ogun State, Nigeria
+              </p>
+              <p>
+                <i class="fas fa-phone-alt"></i>
+                <a href="tel:+2349037519585">+234 903 751 9585</a>
+              </p>
+              <p>
+                <i class="fab fa-whatsapp"></i>
+                <a
+                  href="https://wa.me/2349037519585"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >WhatsApp Us</a
+                >
+              </p>
+              <p>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:olufunmihospital@gmail.com"
+                  >olufunmihospital@gmail.com</a
+                >
+              </p>
+              <p>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:procurement@olufunmihospital.com.ng"
+                  >procurement@olufunmihospital.com.ng</a
+                >
+              </p>
+            </address>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <p>
+            &copy; 2026 Olufunmi Specialist Hospital Ltd. All rights reserved. |
+            Asero Estate, Abeokuta, Ogun State, Nigeria
+          </p>
+          <p>
+            Procurement:
+            <a href="mailto:procurement@olufunmihospital.com.ng"
+              >procurement@olufunmihospital.com.ng</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.3.1/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
 </html>
