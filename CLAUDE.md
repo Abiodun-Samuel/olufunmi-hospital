@@ -357,7 +357,7 @@ Sections:
 1. **Hero Banner**
 2. **Services Full Grid** — 6 detailed cards: image + full description + sub-service list + "Book Appointment" CTA each:
    - General Medicine
-   - Maternity & Obstetrics
+   - Obstetrics & Gynaecology
    - Pediatrics
    - Surgery
    - Diagnostics & Lab
