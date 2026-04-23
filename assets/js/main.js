@@ -204,7 +204,7 @@
   if (typedEl && typeof Typed !== 'undefined') {
     new Typed('#hero-typed', {
       strings: [
-        'World-Class Healthcare',
+        'World-Class Healthcare, Trusted Globally',
         'Nursing Education & Training',
         'International Partnerships',
         'Modern Medical Infrastructure'
