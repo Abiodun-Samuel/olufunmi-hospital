@@ -861,6 +861,14 @@ p {
   font-weight: 800;
 }
 
+.hero-title-line {
+  display: block;
+}
+
+.hero h1 {
+  max-width: 18ch;
+}
+
 .hero h1 .text-accent {
   color: var(--green-300);
 }
