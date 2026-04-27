@@ -615,7 +615,6 @@ p {
   color: rgba(255, 255, 255, 0.85);
   transition: var(--transition);
   letter-spacing: 0.005em;
-  white-space: nowrap;
 }
 
 .navbar.scrolled .nav-links a {
@@ -860,13 +859,8 @@ p {
   letter-spacing: -0.03em;
   font-weight: 800;
 }
-
-.hero-title-line {
+.hero h1 span {
   display: block;
-}
-
-.hero h1 {
-  max-width: 18ch;
 }
 
 .hero h1 .text-accent {
@@ -3859,11 +3853,6 @@ img.loaded {
   }
   .nav-links {
     display: flex;
-    gap: 0.05rem;
-  }
-  .nav-links a {
-    font-size: 0.8rem;
-    padding: 0.45rem 0.62rem;
   }
   .hamburger {
     display: none !important;
